@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2019. Eric Draken - ericdraken.com
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ericdraken.common</groupId>
+  <artifactId>common-events</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>Common Events</name>
+  <url>https://ericdraken.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.11</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <junit.jupiter.version>5.5.2</junit.jupiter.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ericdraken.common</groupId>
+      <artifactId>common-utils</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <!--https://jitpack.io/#ericdraken/blinkstick-api-java/-->
+    <dependency>
+      <groupId>com.github.ericdraken</groupId>
+      <artifactId>blinkstick-api-java</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.google.guava/guava-annotations -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava-annotations</artifactId>
+      <version>r03</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>28.1-jre</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>${junit.jupiter.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
