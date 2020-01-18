@@ -31,11 +31,16 @@
   </repositories>
 
   <dependencies>
-    <!-- https://jitpack.io/#ericdraken/common-utils/ -->
+<!--    &lt;!&ndash; https://jitpack.io/#ericdraken/common-utils/ &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>com.github.ericdraken</groupId>-->
+<!--      <artifactId>common-utils</artifactId>-->
+<!--      <version>[0.1.1,1.0)</version>-->
+<!--    </dependency>-->
     <dependency>
-      <groupId>com.github.ericdraken</groupId>
+      <groupId>com.ericdraken.common</groupId>
       <artifactId>common-utils</artifactId>
-      <version>[0.1,1.0)</version>
+      <version>[0.1.1,1.0)</version>
     </dependency>
 
     <!--https://jitpack.io/#ericdraken/blinkstick-api-java/-->
@@ -74,6 +79,18 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
