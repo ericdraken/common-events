@@ -10,7 +10,7 @@
 
   <groupId>com.ericdraken.common</groupId>
   <artifactId>common-events</artifactId>
-  <version>0.1</version>
+  <version>0.1.1</version>
 
   <name>Common Events</name>
   <url>https://ericdraken.com</url>
@@ -38,9 +38,9 @@
 <!--      <version>[0.1.1,1.0)</version>-->
 <!--    </dependency>-->
     <dependency>
-      <groupId>com.ericdraken.common</groupId>
+      <groupId>com.github.ericdraken</groupId>
       <artifactId>common-utils</artifactId>
-      <version>[0.1.1,1.0)</version>
+      <version>[0.1.3,1.0)</version>
     </dependency>
 
     <!--https://jitpack.io/#ericdraken/blinkstick-api-java/-->
